@@ -1,0 +1,13 @@
+D:\BridgeLabz\Data Structure\Data Structure\bin\Debug\Data Structure.exe.config
+D:\BridgeLabz\Data Structure\Data Structure\bin\Debug\Data Structure.exe
+D:\BridgeLabz\Data Structure\Data Structure\bin\Debug\Data Structure.pdb
+D:\BridgeLabz\Data Structure\Data Structure\obj\Debug\Data Structure.csprojResolveAssemblyReference.cache
+D:\BridgeLabz\Data Structure\Data Structure\obj\Debug\Data Structure.exe
+D:\BridgeLabz\Data Structure\Data Structure\obj\Debug\Data Structure.pdb
+E:\New Bridge\bridge (2)\Data Structure\Data Structure\obj\Debug\Data Structure.csprojAssemblyReference.cache
+E:\New Bridge\bridge (2)\Data Structure\Data Structure\obj\Debug\Data Structure.csproj.CoreCompileInputs.cache
+E:\New Bridge\bridge (2)\Data Structure\Data Structure\obj\Debug\Data Structure.pdb
+E:\New Bridge\bridge (2)\Data Structure\Data Structure\bin\Debug\Data Structure.exe.config
+E:\New Bridge\bridge (2)\Data Structure\Data Structure\bin\Debug\Data Structure.exe
+E:\New Bridge\bridge (2)\Data Structure\Data Structure\bin\Debug\Data Structure.pdb
+E:\New Bridge\bridge (2)\Data Structure\Data Structure\obj\Debug\Data Structure.exe
