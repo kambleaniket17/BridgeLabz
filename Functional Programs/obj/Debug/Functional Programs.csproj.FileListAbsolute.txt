@@ -1,0 +1,14 @@
+D:\Program\Functional Programs\Functional Programs\obj\Debug\Functional Programs.csprojAssemblyReference.cache
+D:\Program\Functional Programs\Functional Programs\obj\Debug\Functional Programs.csproj.CoreCompileInputs.cache
+D:\Program\Functional Programs\Functional Programs\bin\Debug\Functional Programs.exe.config
+D:\Program\Functional Programs\Functional Programs\bin\Debug\Functional Programs.exe
+D:\Program\Functional Programs\Functional Programs\bin\Debug\Functional Programs.pdb
+D:\Program\Functional Programs\Functional Programs\obj\Debug\Functional Programs.exe
+D:\Program\Functional Programs\Functional Programs\obj\Debug\Functional Programs.pdb
+E:\New Bridge\Functional Programs\Functional Programs\bin\Debug\Functional Programs.exe.config
+E:\New Bridge\Functional Programs\Functional Programs\bin\Debug\Functional Programs.exe
+E:\New Bridge\Functional Programs\Functional Programs\bin\Debug\Functional Programs.pdb
+E:\New Bridge\Functional Programs\Functional Programs\obj\Debug\Functional Programs.csprojAssemblyReference.cache
+E:\New Bridge\Functional Programs\Functional Programs\obj\Debug\Functional Programs.csproj.CoreCompileInputs.cache
+E:\New Bridge\Functional Programs\Functional Programs\obj\Debug\Functional Programs.exe
+E:\New Bridge\Functional Programs\Functional Programs\obj\Debug\Functional Programs.pdb
