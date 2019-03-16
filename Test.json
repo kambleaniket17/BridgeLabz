@@ -1,0 +1,10 @@
+{
+  "channel": [
+    {
+      "title": "Star Wars",
+      "link": "http://www.starwars.com",
+      "description": "Star Wars blog.",
+      "obsolete": "Obsolete value"
+    }
+  ]
+}

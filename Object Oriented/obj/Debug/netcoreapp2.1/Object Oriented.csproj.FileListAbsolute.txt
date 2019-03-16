@@ -1,0 +1,11 @@
+E:\New Bridge\Object Oriented\Object Oriented\bin\Debug\netcoreapp2.1\Object Oriented.deps.json
+E:\New Bridge\Object Oriented\Object Oriented\bin\Debug\netcoreapp2.1\Object Oriented.runtimeconfig.json
+E:\New Bridge\Object Oriented\Object Oriented\bin\Debug\netcoreapp2.1\Object Oriented.runtimeconfig.dev.json
+E:\New Bridge\Object Oriented\Object Oriented\bin\Debug\netcoreapp2.1\Object Oriented.dll
+E:\New Bridge\Object Oriented\Object Oriented\obj\Debug\netcoreapp2.1\Object Oriented.csprojAssemblyReference.cache
+E:\New Bridge\Object Oriented\Object Oriented\obj\Debug\netcoreapp2.1\Object Oriented.csproj.CoreCompileInputs.cache
+E:\New Bridge\Object Oriented\Object Oriented\obj\Debug\netcoreapp2.1\Object Oriented.AssemblyInfoInputs.cache
+E:\New Bridge\Object Oriented\Object Oriented\obj\Debug\netcoreapp2.1\Object Oriented.AssemblyInfo.cs
+E:\New Bridge\Object Oriented\Object Oriented\bin\Debug\netcoreapp2.1\Object Oriented.pdb
+E:\New Bridge\Object Oriented\Object Oriented\obj\Debug\netcoreapp2.1\Object Oriented.dll
+E:\New Bridge\Object Oriented\Object Oriented\obj\Debug\netcoreapp2.1\Object Oriented.pdb
