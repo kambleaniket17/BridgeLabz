@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Tata",
+    "shares": 4000,
+    "price": 20
+  },
+  {
+    "id": 2,
+    "name": "Reliance",
+    "shares": 7500 ,
+    "price": 2310
+  },
+  {
+    "id": 3,
+    "name": "Access",
+    "shares": 500,
+    "price": 750
+  },
+  {
+    "id": 4,
+    "name": "Microsft",
+    "shares": 995,
+    "price": 2100
+  }
+
+]

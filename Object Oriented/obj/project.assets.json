@@ -743,11 +743,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\New Bridge\\Object Oriented\\Object Oriented\\Object Oriented.csproj",
+      "projectUniqueName": "E:\\BridgeLabz\\Object Oriented\\Object Oriented\\Object Oriented.csproj",
       "projectName": "Object Oriented",
-      "projectPath": "E:\\New Bridge\\Object Oriented\\Object Oriented\\Object Oriented.csproj",
+      "projectPath": "E:\\BridgeLabz\\Object Oriented\\Object Oriented\\Object Oriented.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "E:\\New Bridge\\Object Oriented\\Object Oriented\\obj\\",
+      "outputPath": "E:\\BridgeLabz\\Object Oriented\\Object Oriented\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -1,32 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿// -------------------------------------------------------------------------------------------------------------------------
+// <copyright file="Inventory.cs" company="Bridgelabz">
+//   Copyright © 2018 Company
+// </copyright>
+// <creator name="Aniket Kamble"/>
+// ---------------------------------------------------------------------------------------------------------------------------
+namespace Object_Oriented.InventoryDetails
+{
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
 
-namespace Object_Oriented.Test
-{ 
+    /// <summary>
+    /// Inventory
+    /// </summary>
     public class Inventory
     {
-        public class Rice
-        {
-            String name;
-            float price;
-            string weight;
-            public override string ToString()
-            {
-                return string.Format("name{0}", name);
-            }
-        }
-        public class Pulses
-        {
-            String name;
-            float price;
-            string weight;
-        }
-        public class Wheats
-        {
-            String name;
-            float price;
-            string weight;
-        }
+        public string Name { get; set; }
+
+        public double Weight { get; set; }
+
+        public double Price { get; set; }
     }
 }

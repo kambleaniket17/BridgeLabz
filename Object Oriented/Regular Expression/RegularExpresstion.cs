@@ -1,8 +1,14 @@
-﻿
+﻿// -------------------------------------------------------------------------------------------------------------------------
+// <copyright file="RegularExpression.cs" company="Bridgelabz">
+//   Copyright © 2018 Company
+// </copyright>
+// <creator name="Aniket Kamble"/>
+// ---------------------------------------------------------------------------------------------------------------------------
 namespace Object_Oriented 
 {
 
     using System;
+    using System.IO;
     using System.Text.RegularExpressions;
 
    
@@ -10,13 +16,13 @@ namespace Object_Oriented
     {
         public void Operation()
         {
-            this.ReadData();
+            ReadData();
         }
 
-        public void information(string fname, string lname, string mno, string date)
+        public void information(string fname, string lname, string mno)
         {
-           
-            string message = "Hello <<name>>, We have your full name as <<full name>> in our system your contact number is <<91-xxxxxxxxx>>, Please,let us know in case of any clarification Thank you BridgeLabz <<dd/mm/yyyy>>.";
+
+            string message = File.ReadAllText("E:/BridgeLabz/Object Oriented/Regex.txt");
            
             string Name = "<<name>>";
            
@@ -31,7 +37,7 @@ namespace Object_Oriented
             message = RegularExpresstion.ShowMatch(message, "91" + " " + mno, contactNumber);
            
             string Currentdate = "<<dd/mm/yyyy>>";
-            DateTime today = DateTime.Today;
+            DateTime today = DateTime.Now;
            
             message = RegularExpresstion.ShowMatch(message, today.ToString(), Currentdate);
             Console.WriteLine(message);
@@ -46,7 +52,7 @@ namespace Object_Oriented
         }
         public void ReadData()
         {
-           
+            Console.WriteLine("** ** **");
             Console.WriteLine("Enter First Name");
             string fname = Console.ReadLine();
           
@@ -59,11 +65,11 @@ namespace Object_Oriented
             DateTime thisDay = DateTime.Today;
 
 
-            string date = thisDay.ToString("D");
-            date = thisDay.ToString("g");
+            string date = thisDay.ToString();
+            date = thisDay.ToString();
             if (Regex.IsMatch(mobilenum, @"[0-9]{10}") && Regex.IsMatch(fname, @"[a-zA-z]") && Regex.IsMatch(lname, @"[a-zA-z]"))
             {
-                information(fname, lname, mobilenum, date);
+                information(fname, lname, mobilenum);
             }
             else
             {

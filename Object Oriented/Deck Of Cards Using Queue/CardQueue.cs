@@ -1,5 +1,5 @@
 ﻿// -------------------------------------------------------------------------------------------------------------------------
-// <copyright file="DeckofCard.cs" company="Bridgelabz">
+// <copyright file="CardQueue.cs" company="Bridgelabz">
 //   Copyright © 2018 Company
 // </copyright>
 // <creator name="Aniket Kamble"/>
@@ -7,46 +7,46 @@
 namespace Object_Oriented
 {
     using System;
+    using System.Collections.Generic;
 
     /// <summary>
-    /// DeckOfCard class 
+    /// Card queue class
     /// </summary>
-    public class DeckOfCard
+    public class CardQueue
     {
         /// <summary>
-        /// Decks the card.
+        /// Cards the in queue.
         /// </summary>
-        public static void Card()
+        public static void CardInQueue()
         {
-            ////assigning the return value to player card array
-            string[,] playercard = PassingCards();
-            ////printing on console
-            Console.WriteLine("******");
-            Console.WriteLine("Player1 \t Player2 \t Player3 \t Player4");
-            Console.WriteLine();
-            int x = 0;
-            int y = 0;
-            for (int i = 0; i < 9; i++)
+            string[,] CardOfPlayer = PassingCards();
+
+            Queue<Queue<string>> sortedcard = SortingCards(CardOfPlayer);
+            string[] playername = { "** Player 1 **", "** Player 2 **", "** Player 3 **", "** Player 4 **" };
+            int index = 0;
+            while (sortedcard.Count != 0)
             {
-                for (int j = 0; j < 4; j++)
+                Queue<string> temp = sortedcard.Dequeue();
+                Console.WriteLine(playername[index] + ":");
+                while (temp.Count != 0)
                 {
-                    Console.Write(playercard[x, y] + " \t ");
-                    y++;
-                    if (y == 9)
-                    {
-                        y = 0;
-                        x++;
-                    }
+                    Console.Write(temp.Dequeue() + " \t ");
                 }
 
                 Console.WriteLine();
+                index++;
             }
         }
+        
+        /// <summary>
+        /// Passing the Cards
+        /// </summary>
+        /// <returns></returns>
         public static string[,] PassingCards()
         {
             ////declaring and initializing string array 
             string[,] arr = new string[4, 13];
-            ////calling recursively showcard method 
+            ////calling recursively cardInsert method 
             ShowCard(arr);
             ////calling card shuffle method recursively
             Shuffle(arr);
@@ -66,7 +66,7 @@ namespace Object_Oriented
         }
 
         /// <summary>
-        /// show the card
+        /// Cards the insert.
         /// </summary>
         /// <param name="arr">The array of string</param>
         public static void ShowCard(string[,] arr)
@@ -119,6 +119,61 @@ namespace Object_Oriented
             string temp = arr[x1, x2];
             arr[x1, x2] = arr[x3, x4];
             arr[x3, x4] = temp;
+        }
+        public static Queue<Queue<string>> SortingCards(string[,] playercard)
+        {
+            Queue<Queue<string>> sortedcard = new Queue<Queue<string>>();
+
+            string[] rank = { "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace" };
+            int[] arr = new int[9];
+            int index = 0;
+            for (int i = 0; i < 4; i++)
+            {
+                for (int j = 0; j < 9; j++)
+                {
+                    string[] temp = (playercard[i, j] + " ").Split(' ');
+                    for (int k = 0; k < 13; k++)
+                    {
+                        if (temp[1].Equals(rank[k]))
+                        {
+                            arr[index] = k;
+                            index++;
+                        }
+                    }
+                }
+
+                Console.WriteLine();
+                index = 0;
+                for (int k1 = 0; k1 < arr.Length - 1; k1++)
+                {
+                    for (int k2 = k1 + 1; k2 < arr.Length; k2++)
+                    {
+                        if (arr[k1] > arr[k2])
+                        {
+                            int temp = arr[k1];
+                            arr[k1] = arr[k2];
+                            arr[k2] = temp;
+
+                            string temp1 = playercard[i, k1];
+                            playercard[i, k1] = playercard[i, k2];
+                            playercard[i, k2] = temp1;
+                        }
+                    }
+                }
+            }
+
+            for (int i = 0; i < playercard.GetLength(0); i++)
+            {
+                Queue<string> temp = new Queue<string>();
+                for (int j = 0; j < playercard.GetLength(1); j++)
+                {
+                    temp.Enqueue(playercard[i, j]);
+                }
+
+                sortedcard.Enqueue(temp);
+            }
+
+            return sortedcard;
         }
     }
 }

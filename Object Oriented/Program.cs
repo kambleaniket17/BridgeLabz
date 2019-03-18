@@ -1,29 +1,32 @@
-﻿namespace Object_Oriented
+﻿// -------------------------------------------------------------------------------------------------------------------------
+// <copyright file="Program.cs" company="Bridgelabz">
+//   Copyright © 2018 Company
+// </copyright>
+// <creator name="Aniket Kamble"/>
+// ---------------------------------------------------------------------------------------------------------------------------
+namespace Object_Oriented
 {
     using System;
     using System.Text.RegularExpressions;
+    using Stock;
 
    public  class Program
     {
         static void Main(string[] args)
         {
-            char flag;
+            int flag=0;
             try
             {
                 do
                 {
-                    Console.WriteLine("*** List Of Programs ***\n1:Inventory Detais\n2:Regular Expression Demonstration\n3:Stock Report\n4:Inventory Management Program\n5:Deck Of Cards\n");
+                    Console.WriteLine("*** List Of Programs ***\n1:Inventory Detais\n2:Regular Expression Demonstration\n3:Stock Report\n4:Inventory Management Program\n5:Deck Of Cards\n6:Deck Of Card Using Queue\n7:Address Book");
                     Console.WriteLine("Enter The Choice");
                     int choice = int.Parse(Console.ReadLine());
 
                     switch (choice)
                     {
-                        case 0:
-                            Test.InventoryInfo.JsonInventory();
-                            Console.ReadKey();
-                            break;
                         case 1:
-                            Inventory_Data_Management.InventoryInfo.JsonInventory();
+                            InventoryDetails.InventoryInfo.PrintTotalData();
                             Console.ReadKey();
                             break;
                         case 2:
@@ -32,23 +35,27 @@
                             Console.ReadKey();
                             break;
                         case 3:
-                            Testing.abc.test();
-                            Console.ReadKey();
+                            StockPortfolio.StockShare();
                             break;
                         case 4:
-                            Inventory_Management_Program.InventoryManager.manage();
+                            InventoryFactory.Manage();
                             Console.ReadKey();
                             break;
                         case 5:
-                            DeckOfCard.DeckOfCard.CardsInfo();
-
+                            DeckOfCard.Card();
+                            break;
+                        case 6:
+                            CardQueue.CardInQueue();
+                            break;
+                        case 7:
+                            AddressBook.AddressBookDetails();
                             break;
                         default:
                             break;
                     }
-                    Console.WriteLine("ENTER YES FOR Y AND NO FOR N");
-                    flag = Convert.ToChar(Console.ReadLine());
-                } while (flag == 'y' || flag == 'Y');
+                    Console.WriteLine("ENTER 0 for continue");
+                    flag = int.Parse(Console.ReadLine());
+                } while (flag == 0);
             }
             catch (Exception)
             {

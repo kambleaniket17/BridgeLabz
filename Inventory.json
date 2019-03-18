@@ -1,32 +1,17 @@
-{
-  "Rice": [
-    {
-      "name": "Basamati",
-      "price": 54,
-      "weight": "1kg"
-    },
-    {
-      "name": "Indrayani",
-      "price": 60,
-      "weight": "1kg"
-    }
-  ],
-  "Pulses": [
-    {
-      "name": "Moong",
-      "price": 119,
-      "weight": "1kg"
-    },
-    {
-      "name": "Toor",
-      "price": 97,
-      "weight": "1kg"
-    }
-  ],
-  "Wheats": {
-    "name": "Organic Bhalia Wheat",
-    "price": 64,
-    "weight": "1kg"
+[
+  {
+    "Name": "rice",
+    "weight": 10,
+    "price": 25
+  },
+  {
+    "Name": "pulses",
+    "weight": 10,
+    "price": 35
+  },
+  {
+    "Name": "wheat",
+    "weight": 5,
+    "price": 20
   }
-}
-
+]

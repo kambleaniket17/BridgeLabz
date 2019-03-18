@@ -1,46 +1,60 @@
-﻿using Newtonsoft.Json.Linq;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
-
-namespace Object_Oriented.Inventory_Management_Program
+﻿// -------------------------------------------------------------------------------------------------------------------------
+// <copyright file="InventoryFactory.cs" company="Bridgelabz">
+//   Copyright © 2018 Company
+// </copyright>
+// <creator name="Aniket Kamble"/>
+// ---------------------------------------------------------------------------------------------------------------------------
+namespace Object_Oriented
 {
+    using System;
+
+    /// <summary>
+    /// Inventory operations method is calling class of all the methods
+    /// </summary>
     public class InventoryFactory
     {
-        public static JObject inventoryInfo()
+        /// <summary>
+        /// Manages this instance.
+        /// </summary>
+        public static void Manage()
         {
-            string information = File.ReadAllText("E:/New Bridge/Object Oriented/Inventory.json");
-            JObject json = JObject.Parse(information);
-            return json;
-            /*JArray array = (JArray)json["Rice"];
-            Console.WriteLine("*** Rice Details: ***");
-            foreach (var rice in array)
+            try
             {
-                Console.WriteLine("Name:" + rice["name"].ToString());
-                Console.WriteLine("price:" + rice["price"]);
-                Console.WriteLine("Weight:" + rice["weight"].ToString());
-                var a = rice["price"];
-                a = rice["0"];
-                Console.WriteLine();
+                int ch;
+                do
+                {
+                    InventoryManager inventory = new InventoryManager();
+                    Console.WriteLine("** ** **");
+                    Console.WriteLine("** Press 1 to Display Data from file **");
+                    Console.WriteLine("** Press 2 to Add the data to file **");
+                    Console.WriteLine("** Press 3 to Update the data in file **");
+                    Console.WriteLine("** Press 4 to Remove the data in file");
+                    int choice = Convert.ToInt32(Console.ReadLine());
+                    switch (choice)
+                    {
+                        case 1:
+                            inventory.InventoryManage();
+                            break;
+                        case 2:
+                            inventory.AddInventory();
+                            break;
+                        case 3:
+                            inventory.UpdateInventory();
+                            break;
+                        case 4:
+                            inventory.Delete();
+                            break;
+                    }
+
+                    Console.WriteLine("Do you want to continue press 0");
+                    ch = int.Parse(Console.ReadLine());
+                }
+                while (ch == 0);
             }
-            Console.WriteLine("*** Pulses Details: ***");
-            array = (JArray)json["Pulses"];
-            foreach (var pulses in array)
+            catch (Exception e)
             {
-                Console.WriteLine("Name:" + pulses["name"].ToString());
-                Console.WriteLine("price:" + pulses["price"]);
-                Console.WriteLine("Weight:" + pulses["weight"].ToString());
-                Console.WriteLine();
+                Console.WriteLine(e.Message);
             }
-            Console.WriteLine("*** Wheats Details: ***");
-            var wheats = json["Wheats"];
-
-            Console.WriteLine("Name:" + wheats["name"].ToString());
-            Console.WriteLine("price:" + wheats["price"]);
-            Console.WriteLine("Weight:" + wheats["weight"].ToString());
-        }*/
-
         }
     }
 }

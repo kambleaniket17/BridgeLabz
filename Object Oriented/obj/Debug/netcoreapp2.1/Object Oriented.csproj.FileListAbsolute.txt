@@ -9,3 +9,14 @@ E:\New Bridge\Object Oriented\Object Oriented\obj\Debug\netcoreapp2.1\Object Ori
 E:\New Bridge\Object Oriented\Object Oriented\bin\Debug\netcoreapp2.1\Object Oriented.pdb
 E:\New Bridge\Object Oriented\Object Oriented\obj\Debug\netcoreapp2.1\Object Oriented.dll
 E:\New Bridge\Object Oriented\Object Oriented\obj\Debug\netcoreapp2.1\Object Oriented.pdb
+E:\BridgeLabz\Object Oriented\Object Oriented\bin\Debug\netcoreapp2.1\Object Oriented.deps.json
+E:\BridgeLabz\Object Oriented\Object Oriented\bin\Debug\netcoreapp2.1\Object Oriented.runtimeconfig.json
+E:\BridgeLabz\Object Oriented\Object Oriented\bin\Debug\netcoreapp2.1\Object Oriented.runtimeconfig.dev.json
+E:\BridgeLabz\Object Oriented\Object Oriented\bin\Debug\netcoreapp2.1\Object Oriented.dll
+E:\BridgeLabz\Object Oriented\Object Oriented\bin\Debug\netcoreapp2.1\Object Oriented.pdb
+E:\BridgeLabz\Object Oriented\Object Oriented\obj\Debug\netcoreapp2.1\Object Oriented.csprojAssemblyReference.cache
+E:\BridgeLabz\Object Oriented\Object Oriented\obj\Debug\netcoreapp2.1\Object Oriented.csproj.CoreCompileInputs.cache
+E:\BridgeLabz\Object Oriented\Object Oriented\obj\Debug\netcoreapp2.1\Object Oriented.AssemblyInfoInputs.cache
+E:\BridgeLabz\Object Oriented\Object Oriented\obj\Debug\netcoreapp2.1\Object Oriented.AssemblyInfo.cs
+E:\BridgeLabz\Object Oriented\Object Oriented\obj\Debug\netcoreapp2.1\Object Oriented.dll
+E:\BridgeLabz\Object Oriented\Object Oriented\obj\Debug\netcoreapp2.1\Object Oriented.pdb
