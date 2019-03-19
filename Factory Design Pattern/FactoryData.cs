@@ -4,70 +4,69 @@
     using System.Collections.Generic;
     using System.Text;
 
-    public abstract class Plan
+    public abstract class Computer
     {
-        protected double rate;
-        public abstract void getRate();
-        public void getBill(int unit)
+        public abstract void GetObject();
+    }
+
+    public class PC : Computer
+    {
+        public override void GetObject()
         {
-            Console.WriteLine(rate*unit);
+            Console.WriteLine("PC Object Created");
         }
     }
-    public class DomesticPlan:Plan
+
+    public class Laptop : Computer
     {
-        public override void getRate()
+        public override void GetObject()
         {
-            rate = 3.50;
+            Console.WriteLine("Laptop Object Created");
         }
     }
-    public class Commercial : Plan
+
+    public class Server : Computer
     {
-        public override void getRate()
+        public override void GetObject()
         {
-            rate = 7.50;
+            Console.WriteLine("Server Object Created");
         }
     }
-    public class InstitutionalPlan : Plan
+
+    public class ComputerFactory
     {
-        public override void getRate()
+        public Computer GetPlan(string computerObj)
         {
-            rate = 5.50;
-        }
-    }
-    public class FactoryData
-    {
-        public Plan getPlan(string plan)
-        {
-            if(plan.Equals("DOMESTICPLAN"))
+            if (computerObj.Equals("PC"))
             {
-                return new DomesticPlan();
+                return new PC();
             }
-            if (plan.Equals("COMMERCIAL"))
+
+            if (computerObj.Equals("LAPTOP"))
             {
-                return new Commercial();
+                return new Laptop();
             }
-            if (plan.Equals("INSTITUTIONALPLAN"))
+
+            if (computerObj.Equals("SERVER"))
             {
-                return new InstitutionalPlan();
+                return new Server();
             }
+
             return null;
         }
     }
+
     public class Bill
     {
         public static void Calculate()
         {
-            FactoryData factoryData = new FactoryData();
-            Console.WriteLine("List Of Plans\n1:DOMESTICPLAN\n2:INSTITUTIONALPLAN");
-            Console.WriteLine("Write Your Plan");
-            string plan = Console.ReadLine();
-            plan=plan.ToUpper();
-            Plan p=factoryData.getPlan(plan);
-            Console.WriteLine("Enter The Unit");
-            int unit = int.Parse(Console.ReadLine());
-            p.getRate();
-            Console.WriteLine("Your Unit ="+unit+ "ANd Plan="+plan);
-            p.getBill(unit);
+            ComputerFactory factoryData = new ComputerFactory();
+            Console.WriteLine("List Of Computer Factory\n1:PC\n2:LAPTOP\n3:SERVER");
+            Console.WriteLine("Write Name of Object You Want");
+            string objectName = Console.ReadLine();
+            objectName = objectName.ToUpper();
+            Computer p = factoryData.GetPlan(objectName);
+            p.GetObject();
         }
     }
 }

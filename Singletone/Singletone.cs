@@ -55,8 +55,9 @@
             Console.WriteLine("Enter 2nd Element");
             int second = int.Parse(Console.ReadLine());
             int addition = first + second;
-            Console.WriteLine("Addition ="+addition);
+            Console.WriteLine("Addition =" + addition);
         }
+
         public void Subtraction()
         {
             Console.WriteLine("Enter 1st Element");

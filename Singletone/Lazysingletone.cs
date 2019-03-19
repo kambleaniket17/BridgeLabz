@@ -6,27 +6,32 @@
 
     public sealed class Lazysingletone
     {
-        private static readonly Lazysingletone instance = new Lazysingletone();
+        private static readonly Lazysingletone Instance = new Lazysingletone();
+
         static Lazysingletone()
         {
-
         }
+
         private Lazysingletone()
         {
-
         }
-        public static Lazysingletone Instance
+
+        public static Lazysingletone InstanceObj
         {
             get
             {
-                return instance;
+                return Instance;
             }
         }
+
         public static void Calculate()
         {
-            Console.WriteLine("1:Addition\n2:Subtraction");
+            int choice = 0;
+            do
+            { 
+            Console.WriteLine("1:Addition\n2:Subtraction\nPress 0 For Exit");
             Console.WriteLine("Enter The Choice");
-            int choice = int.Parse(Console.ReadLine());
+            choice = int.Parse(Console.ReadLine());
             switch (choice)
             {
                 case 1:
@@ -37,8 +42,9 @@
                     break;
                 default:
                     break;
-            } while (choice != 0) ;
-
+            }
+            }
+            while (choice != 0);
         }
         public void Addition()
         {
