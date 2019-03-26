@@ -1,4 +1,10 @@
-﻿namespace Design_Pattern.Adapter_Design_Pattern.Object
+﻿// -------------------------------------------------------------------------------------------------------------------------
+// <copyright file="AdapterObject.cs" company="Bridgelabz">
+//   Copyright © 2018 Company
+// </copyright>
+// <creator name="Aniket Kamble"/>
+// ---------------------------------------------------------------------------------------------------------------------------
+namespace Design_Pattern.Adapter_Design_Pattern.Object
 {
     using System;
     using System.Collections.Generic;
@@ -61,7 +67,7 @@
     /// <seealso cref="Design_Pattern.Adapter_Design_Pattern.Object.ISocketAdapter" />
     public class SocketObjectAdapterImp : Socket, ISocketAdapter
     {
-        private Socket socket = new Socket();
+        private readonly Socket socket = new Socket();
 
         /// <summary>
         /// Get120s the volt.
