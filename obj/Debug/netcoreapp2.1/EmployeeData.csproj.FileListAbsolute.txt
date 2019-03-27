@@ -1,0 +1,14 @@
+E:\BridgeLabz\EmployeeData\EmployeeData\bin\Debug\netcoreapp2.1\EmployeeData.deps.json
+E:\BridgeLabz\EmployeeData\EmployeeData\bin\Debug\netcoreapp2.1\EmployeeData.runtimeconfig.json
+E:\BridgeLabz\EmployeeData\EmployeeData\bin\Debug\netcoreapp2.1\EmployeeData.runtimeconfig.dev.json
+E:\BridgeLabz\EmployeeData\EmployeeData\bin\Debug\netcoreapp2.1\EmployeeData.dll
+E:\BridgeLabz\EmployeeData\EmployeeData\bin\Debug\netcoreapp2.1\EmployeeData.pdb
+E:\BridgeLabz\EmployeeData\EmployeeData\obj\Debug\netcoreapp2.1\EmployeeData.csprojAssemblyReference.cache
+E:\BridgeLabz\EmployeeData\EmployeeData\obj\Debug\netcoreapp2.1\EmployeeData.csproj.CoreCompileInputs.cache
+E:\BridgeLabz\EmployeeData\EmployeeData\obj\Debug\netcoreapp2.1\EmployeeData.RazorAssemblyInfo.cache
+E:\BridgeLabz\EmployeeData\EmployeeData\obj\Debug\netcoreapp2.1\EmployeeData.RazorAssemblyInfo.cs
+E:\BridgeLabz\EmployeeData\EmployeeData\obj\Debug\netcoreapp2.1\EmployeeData.AssemblyInfoInputs.cache
+E:\BridgeLabz\EmployeeData\EmployeeData\obj\Debug\netcoreapp2.1\EmployeeData.AssemblyInfo.cs
+E:\BridgeLabz\EmployeeData\EmployeeData\obj\Debug\netcoreapp2.1\EmployeeData.RazorTargetAssemblyInfo.cache
+E:\BridgeLabz\EmployeeData\EmployeeData\obj\Debug\netcoreapp2.1\EmployeeData.dll
+E:\BridgeLabz\EmployeeData\EmployeeData\obj\Debug\netcoreapp2.1\EmployeeData.pdb
